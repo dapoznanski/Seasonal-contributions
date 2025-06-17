@@ -60,15 +60,13 @@ _your output data references here_
 
 
 ## Contributing modeling software
-| Model | Version | Repository Link | DOI |
-|-------|---------|-----------------|-----|
-| model 1 | version | link to code repository | link to DOI dataset |
-| model 2 | version | link to code repository | link to DOI dataset |
-| component 1 | version | link to code repository | link to DOI dataset |
+| Model | Repository Link | DOI |
+|-------|-----------------|-----|
+| qn-SSJPM | (https://zenodo.org/records/3898657) | link to DOI dataset |
+| damage curve | https://github.com/dmr2/damage_allowance/blob/master/README.md | link to DOI dataset |
 
 ## Reproduce my experiment
-Fill in detailed info here or link to other documentation to thoroughly walkthrough how to use the contents of this repository to reproduce your experiment. Below is an example.
-
+The following script and data are in MATLAB language. A sample qn-SSJPM dataset from The Battery tide gauge is provided. For other locations, perform qn-SSJPM from Baranes et al. (2020) analysis prior to running the contribution script. The damage curve for Manhattan uses the data from Rasmussen et al. (2020), which is copied here. 
 
 1. Install the software components required to conduct the experiment from [contributing modeling software](#contributing-modeling-software)
 2. Download and install the supporting [input data](#input-data) required to conduct the experiment
@@ -76,7 +74,7 @@ Fill in detailed info here or link to other documentation to thoroughly walkthro
 
 | Script Name | Description | How to Run |
 | --- | --- | --- |
-| `step_one.py` | Script to run the first part of my experiment | `python3 step_one.py -f /path/to/inputdata/file_one.csv` |
+| `seasonal_contribution.m` | Script to create plots. | `python3 step_one.py -f /path/to/inputdata/file_one.csv` |
 | `step_two.py` | Script to run the second part of my experiment | `python3 step_two.py -o /path/to/my/outputdir` |
 
 4. Download and unzip the [output data](#output-data) from my experiment 
