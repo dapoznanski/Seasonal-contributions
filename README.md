@@ -68,27 +68,23 @@ _your output data references here_
 ## Reproduce my experiment
 The following script and data are in MATLAB language. A sample qn-SSJPM dataset from The Battery tide gauge is provided. For other locations, perform qn-SSJPM from Baranes et al. (2020) analysis prior to running the contribution script. The damage curve for Manhattan uses the data from Rasmussen et al. (2020), which is copied here. 
 
-1. Install the software components required to conduct the experiment from [contributing modeling software](#contributing-modeling-software)
+1. Install MATLAB, required to conduct the experiment from [contributing modeling software](#contributing-modeling-software)
 2. Download and install the supporting [input data](#input-data) required to conduct the experiment
 3. Run the following scripts in the `workflow` directory to re-create this experiment:
 
-| Script Name | Description | How to Run |
+| Script Name | Description |
 | --- | --- | --- |
-| `seasonal_contribution.m` | Script to create plots. | `python3 step_one.py -f /path/to/inputdata/file_one.csv` |
-| `step_two.py` | Script to run the second part of my experiment | `python3 step_two.py -o /path/to/my/outputdir` |
+| `seasonal_contribution.m` | Script to calculate seasonal contribution of ETCs to total year storm tides. | 
+| `battery_damage.m` | Script to calculate AALs and contribution of ETCs to total year property damage. | 
 
 4. Download and unzip the [output data](#output-data) from my experiment 
 5. Run the following scripts in the `workflow` directory to compare my outputs to those from the publication
 
-| Script Name | Description | How to Run |
-| --- | --- | --- |
-| `compare.py` | Script to compare my outputs to the original | `python3 compare.py --orig /path/to/original/data.csv --new /path/to/new/data.csv` |
-
 ## Reproduce my figures
 Use the scripts found in the `figures` directory to reproduce the figures used in this publication.
 
-| Figure Number(s) | Script Name | Description | How to Run |
+| Figure Number(s) | Script Name | Description | 
 | --- | --- | --- | --- |
-| 1, 2 | `generate_plot.py` | Description of figure, ie. "Plots the difference between our two scenarios" | `python3 generate_plot.py -input /path/to/inputs -output /path/to/outuptdir` |
-| 3 | `generate_figure.py` | Description of figure, ie. "Shows how the mean and peak differences are calculated" | `python3 generate_figure.py -input /path/to/inputs -output /path/to/outuptdir` |
+| 1 | `plot_qnssjpm.m` | qn-SSJPM plot with cool and warm seasons, total year, and uncertainty. | 
+| 3 | `plot_battery_damage.m` | Description of figure, ie. "Shows how the mean and peak differences are calculated" | 
 
