@@ -73,7 +73,7 @@ The following script and data are in MATLAB language. A sample qn-SSJPM dataset 
 3. Run the following scripts in the `workflow` directory to re-create this experiment:
 
 | Script Name | Description |
-| --- | --- | --- |
+| --- | --- |
 | `seasonal_contribution.m` | Script to calculate seasonal contribution of ETCs to total year storm tides. | 
 | `battery_damage.m` | Script to calculate AALs and contribution of ETCs to total year property damage. | 
 
