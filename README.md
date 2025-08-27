@@ -84,7 +84,7 @@ The following script and data are in MATLAB language. A sample qn-SSJPM dataset 
 Use the scripts found in the `figures` directory to reproduce the figures used in this publication.
 
 | Figure Number(s) | Script Name | Description | 
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | 1 | `plot_qnssjpm.m` | qn-SSJPM plot with cool and warm seasons, total year, and uncertainty. | 
 | 3 | `plot_battery_damage.m` | Description of figure, ie. "Shows how the mean and peak differences are calculated" | 
 
