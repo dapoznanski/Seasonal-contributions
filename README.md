@@ -34,20 +34,20 @@ _your journal reference_
 The following script and data are in MATLAB language. A sample qn-SSJPM dataset from The Battery tide gauge is provided. For other locations, perform qn-SSJPM from Baranes et al. (2020) analysis prior to running the contribution script. The damage curve for Manhattan uses the methods and data from Rasmussen et al. (2020), which is copied here. 
 
 1. Install MATLAB
-2. Download and install the supporting [input data](#input-data) required to conduct the experiment
+2. Download and install the supporting input data required to conduct the experiment
 3. Run the following scripts to re-create this experiment:
 
-| Script Name | Description |
-| --- | --- |
-| `seasonal_contribution.m` | Script to calculate seasonal contribution of ETCs to total year storm tides. | 
-| `battery_damage.m` | Script to calculate AALs and contribution of ETCs to total year property damage. | 
+| Script Name | Input File | Output File| Description |
+| --- | --- | --- | --- |
+| `seasonal_contribution.m` | `TheBattery_qnssjpm.mat` | N/A |  Script to calculate seasonal contribution of ETCs to total year storm tides. | 
+| `battery_damage.m` | `TheBattery_qnssjpm.mat` and `damage_curve_manhattan_property_area_elevation.csv` | `TheBattery_damage.mat` | Script to calculate AALs and contribution of ETCs to total year property damage. | 
 
 
 ## Reproduce my figures
 Use the scripts found in the `figures` directory to reproduce the figures used in this publication.
 
-| Figure Number(s) | Script Name | Description | 
-| --- | --- | --- |
-| 1 | `plot_qnssjpm.m` | qn-SSJPM plot with cool and warm seasons, total year, and uncertainty. | 
-| 3 | `plot_battery_damage.m` | Plots associated with damage curve at The Battery site | 
+| Figure Number(s) | Script Name | Input File | Description | 
+| --- | --- | --- | --- |
+| 1 | `plot_qnssjpm.m` | `TheBattery_qnssjpm.mat` | qn-SSJPM plot with cool and warm seasons, total year, and uncertainty. | 
+| 3 | `plot_battery_damage.m` | `TheBattery_damage.mat` | Plots associated with damage curve at The Battery site | 
 
