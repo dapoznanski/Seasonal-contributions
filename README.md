@@ -3,7 +3,7 @@
 
 # Apoznanski-etal_2025_earthsfuture
 
-**Seasonal drivers of storm tides and flood impacts along the US Atlantic Coast (once published, include a link to the text)**
+**Seasonal drivers of storm tides and coastal flood impacts along the US Atlantic Coast (once published, include a link to the text)**
 
 Diana K. Apoznanski<sup>1\*</sup>, Hannah Baranes<sup>4</sup>,  Robert E. Kopp<sup>2, 3</sup>, and Anthony J. Broccoli<sup>1, 3</sup>
 
