@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/265254045.svg)](https://zenodo.org/doi/10.5281/zenodo.10442485)
+[![DOI](https://doi.org/10.5281/zenodo.18773152)
 
 
 # Apoznanski-etal_2025_earthsfuture
